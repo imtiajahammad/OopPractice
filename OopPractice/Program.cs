@@ -10,7 +10,7 @@ namespace OopPractice
     {
         static void Main(string[] args)
         {
-            Duck duckM = new MallardDucK();
+            /*Duck duckM = new MallardDucK();
             duckM.Display();
             duckM.Quack();
             duckM.Swim();
@@ -19,7 +19,9 @@ namespace OopPractice
             duckR.Display();
             duckR.Quack();
             duckR.Swim();
-            duckR.Fly();
+            duckR.Fly();*/
+            Duck duckRubber = new RubberDuck();
+            duckRubber.Fly();
             Console.ReadKey();
         }
     }
@@ -57,5 +59,19 @@ namespace OopPractice
             Console.WriteLine("RedHeadDucK class Display Method");
         }
     }
+
+    public class RubberDuck : Duck
+    {
+        public override void Quack()
+        {
+            Console.WriteLine("RubberDuck class Quack Method");
+        }
+        public override void Fly()
+        {
+            Console.WriteLine("RubberDuck class Fly Method-do nothing");
+        }
+    }
+
+
 
 }
