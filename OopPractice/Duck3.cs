@@ -32,6 +32,14 @@ namespace OopPractice
             Console.WriteLine("Duck3 class Swim Method--all ducks swim");
         }
     }
+
+
+
+
+
+
+
+
     public class MallardDucK3 : Duck3
     {
         public MallardDucK3()
